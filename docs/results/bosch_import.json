@@ -1,0 +1,18 @@
+{
+  "input_parts": 1183747,
+  "input_failures": 6879,
+  "input_failure_pct": 0.581120796927046,
+  "station_passes": 14382158,
+  "stations_in_header": 52,
+  "date_columns": 1156,
+  "sample_limit": null,
+  "loaded_at": "2026-10-12T05:12:50.032938+00:00",
+  "published_comparison": {
+    "published_parts_approx": 1180000,
+    "published_failure_pct_approx": 0.58,
+    "source": "kaggle_bosch",
+    "warnings": [],
+    "parts_deviation_pct": 0.318,
+    "failure_pct_deviation_points": 0.0011
+  }
+}

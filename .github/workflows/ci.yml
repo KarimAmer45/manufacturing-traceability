@@ -1,0 +1,35 @@
+name: Project 1 database checks
+on: [push, pull_request]
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    services:
+      postgres:
+        image: postgres:17
+        env:
+          POSTGRES_PASSWORD: ci
+          POSTGRES_DB: plating_traceability
+        ports: ["5432:5432"]
+        options: >-
+          --health-cmd "pg_isready -U postgres"
+          --health-interval 3s
+          --health-retries 20
+    env:
+      DATABASE_URL: postgresql://postgres:ci@localhost:5432/plating_traceability
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: pip install -r requirements.txt
+      - run: python scripts/migrate.py
+      - run: python scripts/migrate.py
+      - run: python ingest/p1_simulate_plant.py
+      - run: pytest -q tests
+      - run: python scripts/audit_demo.py
+      - run: python scripts/export_results.py
+      - run: python scripts/verify_second_seed.py --seed 7 --start 2026-01-05
+      - uses: actions/upload-artifact@v4
+        with:
+          name: traceability-query-results
+          path: docs/results/

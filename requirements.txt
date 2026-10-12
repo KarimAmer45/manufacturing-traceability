@@ -1,0 +1,6 @@
+psycopg[binary]>=3.2,<4
+PyYAML>=6,<7
+pandas>=2.2,<3
+numpy>=1.26,<3
+tzdata>=2025.1
+pytest>=8,<9

@@ -1,0 +1,115 @@
+{
+  "source": "https://arxiv.org/abs/1701.00705",
+  "weekly_ticks_hypothesis": 16.75,
+  "relative_ticks_per_day": 2.392857142857143,
+  "bin_ticks": 0.25,
+  "observed_first_tick_bin": 0,
+  "observed_last_tick_bin": 6866,
+  "candidate_lags": [
+    {
+      "lag_ticks": 14.0,
+      "correlation": 0.1423301889844768
+    },
+    {
+      "lag_ticks": 14.25,
+      "correlation": 0.16257142474800176
+    },
+    {
+      "lag_ticks": 14.5,
+      "correlation": 0.16355509926897172
+    },
+    {
+      "lag_ticks": 14.75,
+      "correlation": 0.1545447685830657
+    },
+    {
+      "lag_ticks": 15.0,
+      "correlation": 0.14329262178288787
+    },
+    {
+      "lag_ticks": 15.25,
+      "correlation": 0.14297104001650962
+    },
+    {
+      "lag_ticks": 15.5,
+      "correlation": 0.15427733644956207
+    },
+    {
+      "lag_ticks": 15.75,
+      "correlation": 0.17254990104774492
+    },
+    {
+      "lag_ticks": 16.0,
+      "correlation": 0.19819224661120458
+    },
+    {
+      "lag_ticks": 16.25,
+      "correlation": 0.22226658460019413
+    },
+    {
+      "lag_ticks": 16.5,
+      "correlation": 0.25188932690381644
+    },
+    {
+      "lag_ticks": 16.75,
+      "correlation": 0.2676091916034936
+    },
+    {
+      "lag_ticks": 17.0,
+      "correlation": 0.2501225882900515
+    },
+    {
+      "lag_ticks": 17.25,
+      "correlation": 0.2234474478237737
+    },
+    {
+      "lag_ticks": 17.5,
+      "correlation": 0.19383376293700033
+    },
+    {
+      "lag_ticks": 17.75,
+      "correlation": 0.17054090532899632
+    },
+    {
+      "lag_ticks": 18.0,
+      "correlation": 0.1638058320884504
+    },
+    {
+      "lag_ticks": 18.25,
+      "correlation": 0.15657650532696443
+    },
+    {
+      "lag_ticks": 18.5,
+      "correlation": 0.14870725555990774
+    },
+    {
+      "lag_ticks": 18.75,
+      "correlation": 0.1402269105904325
+    },
+    {
+      "lag_ticks": 19.0,
+      "correlation": 0.1304491611644387
+    },
+    {
+      "lag_ticks": 19.25,
+      "correlation": 0.12177771588760675
+    },
+    {
+      "lag_ticks": 19.5,
+      "correlation": 0.10587128780599647
+    },
+    {
+      "lag_ticks": 19.75,
+      "correlation": 0.08995425546617536
+    },
+    {
+      "lag_ticks": 20.0,
+      "correlation": 0.07093414374480146
+    }
+  ],
+  "strongest_in_search_window": {
+    "lag_ticks": 16.75,
+    "correlation": 0.2676091916034936
+  },
+  "interpretation": "Exploratory part-arrival autocorrelation, with empty bins set to zero. A peak can support periodicity, but does not identify a calendar origin or prove that the cycle is weekly."
+}

@@ -1,0 +1,30 @@
+{
+  "seed": 7,
+  "start": "2026-01-05",
+  "weeks": 26,
+  "planted_window": [
+    "2026-03-05T06:00:00+01:00",
+    "2026-03-07T06:00:00+01:00"
+  ],
+  "planted_analyses": [
+    44,
+    45
+  ],
+  "planted_ni_status": [
+    "LOW"
+  ],
+  "other_out_of_limit_analyses": [
+    89,
+    111
+  ],
+  "complaint_lot": "L260305-01723",
+  "complaint_traces_to_planted_analysis": true,
+  "lots_plated_under_planted_analyses": 80,
+  "of_which_contained": 80,
+  "shipped_lots_in_containment": 120,
+  "shipped_pieces_in_containment": 548783,
+  "customers_with_shipments": 5,
+  "unknown_exposure_rows": 0,
+  "passed": true,
+  "failures": []
+}

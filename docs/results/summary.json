@@ -1,0 +1,276 @@
+{
+  "generated_at": "2026-10-12T06:54:05.542034+00:00",
+  "tables": {
+    "counts": [
+      {
+        "item": "lots",
+        "total": 5687
+      },
+      {
+        "item": "carriers",
+        "total": 11662
+      },
+      {
+        "item": "measurements",
+        "total": 27733
+      },
+      {
+        "item": "analyses",
+        "total": 130
+      },
+      {
+        "item": "complaints",
+        "total": 1
+      },
+      {
+        "item": "bosch_parts",
+        "total": 1183747
+      }
+    ],
+    "bad_bath_periods": [
+      {
+        "tank_id": 5,
+        "tank_code": "L1-T05",
+        "analysis_id": 44,
+        "valid_during": "[2026-04-30 06:00:00+02:00, 2026-05-01 06:00:00+02:00)",
+        "findings": "NI=0.9260 LOW"
+      },
+      {
+        "tank_id": 5,
+        "tank_code": "L1-T05",
+        "analysis_id": 45,
+        "valid_during": "[2026-05-01 06:00:00+02:00, 2026-05-04 06:00:00+02:00)",
+        "findings": "NI=0.8400 LOW"
+      }
+    ],
+    "complaint_backward_trace": [
+      {
+        "lot_no": "L260430-01721",
+        "relation": "self",
+        "load_id": 3978,
+        "carrier_no": "B19",
+        "station_code": "L1-T05-S15",
+        "tank_code": "L1-T05",
+        "in_station": "[2026-04-30 10:56:00+02:00, 2026-04-30 12:40:45.714286+02:00)",
+        "analysis_id": 44,
+        "parameter_code": "COD",
+        "value": "122.4840",
+        "status": "NO_LIMIT",
+        "evidence_period": "[2026-04-30 10:56:00+02:00, 2026-04-30 12:40:45.714286+02:00)",
+        "analysis_age": "6:40:45.714286"
+      },
+      {
+        "lot_no": "L260430-01721",
+        "relation": "self",
+        "load_id": 3978,
+        "carrier_no": "B19",
+        "station_code": "L1-T05-S15",
+        "tank_code": "L1-T05",
+        "in_station": "[2026-04-30 10:56:00+02:00, 2026-04-30 12:40:45.714286+02:00)",
+        "analysis_id": 44,
+        "parameter_code": "NI",
+        "value": "0.9260",
+        "status": "LOW",
+        "evidence_period": "[2026-04-30 10:56:00+02:00, 2026-04-30 12:40:45.714286+02:00)",
+        "analysis_age": "6:40:45.714286"
+      },
+      {
+        "lot_no": "L260430-01721",
+        "relation": "self",
+        "load_id": 3979,
+        "carrier_no": "B20",
+        "station_code": "L1-T05-S16",
+        "tank_code": "L1-T05",
+        "in_station": "[2026-04-30 11:00:00+02:00, 2026-04-30 12:44:45.714286+02:00)",
+        "analysis_id": 44,
+        "parameter_code": "COD",
+        "value": "122.4840",
+        "status": "NO_LIMIT",
+        "evidence_period": "[2026-04-30 11:00:00+02:00, 2026-04-30 12:44:45.714286+02:00)",
+        "analysis_age": "6:44:45.714286"
+      },
+      {
+        "lot_no": "L260430-01721",
+        "relation": "self",
+        "load_id": 3979,
+        "carrier_no": "B20",
+        "station_code": "L1-T05-S16",
+        "tank_code": "L1-T05",
+        "in_station": "[2026-04-30 11:00:00+02:00, 2026-04-30 12:44:45.714286+02:00)",
+        "analysis_id": 44,
+        "parameter_code": "NI",
+        "value": "0.9260",
+        "status": "LOW",
+        "evidence_period": "[2026-04-30 11:00:00+02:00, 2026-04-30 12:44:45.714286+02:00)",
+        "analysis_age": "6:44:45.714286"
+      }
+    ],
+    "containment": [
+      {
+        "customer_code": "C001",
+        "affected_lots": 25,
+        "direct_lots": 17,
+        "descendant_lots": 8,
+        "affected_pieces": 53267,
+        "shipped_lots": 9,
+        "shipped_pieces": 30797,
+        "delivery_notes": [
+          "LS-000216",
+          "LS-000221"
+        ]
+      },
+      {
+        "customer_code": "C002",
+        "affected_lots": 18,
+        "direct_lots": 14,
+        "descendant_lots": 4,
+        "affected_pieces": 44134,
+        "shipped_lots": 10,
+        "shipped_pieces": 26120,
+        "delivery_notes": [
+          "LS-000217",
+          "LS-000222"
+        ]
+      },
+      {
+        "customer_code": "C003",
+        "affected_lots": 20,
+        "direct_lots": 14,
+        "descendant_lots": 6,
+        "affected_pieces": 70197,
+        "shipped_lots": 7,
+        "shipped_pieces": 40702,
+        "delivery_notes": [
+          "LS-000218",
+          "LS-000223"
+        ]
+      },
+      {
+        "customer_code": "C004",
+        "affected_lots": 23,
+        "direct_lots": 18,
+        "descendant_lots": 5,
+        "affected_pieces": 40754,
+        "shipped_lots": 13,
+        "shipped_pieces": 28176,
+        "delivery_notes": [
+          "LS-000219",
+          "LS-000224"
+        ]
+      },
+      {
+        "customer_code": "C005",
+        "affected_lots": 27,
+        "direct_lots": 17,
+        "descendant_lots": 10,
+        "affected_pieces": 90701,
+        "shipped_lots": 7,
+        "shipped_pieces": 54447,
+        "delivery_notes": [
+          "LS-000220",
+          "LS-000225"
+        ]
+      }
+    ],
+    "unknown_exposure": [],
+    "genealogy": [
+      {
+        "lot_id": 4,
+        "lot_no": "L260302-00004",
+        "relation": "ancestor",
+        "depth": -1
+      },
+      {
+        "lot_id": 5201,
+        "lot_no": "L260302-00004-R1",
+        "relation": "self",
+        "depth": 0
+      }
+    ],
+    "audit_corrections": [
+      {
+        "changed_at": "2026-10-04 18:09:18.096702+02:00",
+        "login_user": null,
+        "changed_by": "quality_demo_correction",
+        "row_pk": {
+          "measurement_id": 1
+        },
+        "old_value": "8.7100",
+        "new_value": "9.7100"
+      },
+      {
+        "changed_at": "2026-10-04 18:09:18.100289+02:00",
+        "login_user": null,
+        "changed_by": "quality_demo_correction",
+        "row_pk": {
+          "measurement_id": 1
+        },
+        "old_value": "9.7100",
+        "new_value": "8.7100"
+      }
+    ],
+    "bosch_paths": [
+      {
+        "station_path": "L1_S24 > L2_S26 > L3_S29 > L3_S30 > L3_S33 > L3_S34 > L3_S36 > L3_S37",
+        "parts": 58379,
+        "failures": 394,
+        "failure_pct": "0.6749"
+      },
+      {
+        "station_path": "L1_S24 > L2_S26 > L3_S29 > L3_S30 > L3_S33 > L3_S34 > L3_S35 > L3_S37",
+        "parts": 56718,
+        "failures": 383,
+        "failure_pct": "0.6753"
+      },
+      {
+        "station_path": "L1_S25 > L2_S26 > L3_S29 > L3_S30 > L3_S33 > L3_S34 > L3_S36 > L3_S37",
+        "parts": 23438,
+        "failures": 89,
+        "failure_pct": "0.3797"
+      },
+      {
+        "station_path": "L1_S25 > L2_S26 > L3_S29 > L3_S30 > L3_S33 > L3_S34 > L3_S35 > L3_S37",
+        "parts": 22561,
+        "failures": 76,
+        "failure_pct": "0.3369"
+      },
+      {
+        "station_path": "L1_S24 > L2_S27 > L3_S29 > L3_S30 > L3_S33 > L3_S34 > L3_S36 > L3_S37",
+        "parts": 21188,
+        "failures": 111,
+        "failure_pct": "0.5239"
+      },
+      {
+        "station_path": "L1_S24 > L2_S27 > L3_S29 > L3_S30 > L3_S33 > L3_S34 > L3_S35 > L3_S37",
+        "parts": 20316,
+        "failures": 127,
+        "failure_pct": "0.6251"
+      },
+      {
+        "station_path": "L1_S25 > L2_S27 > L3_S29 > L3_S30 > L3_S33 > L3_S34 > L3_S36 > L3_S37",
+        "parts": 10916,
+        "failures": 35,
+        "failure_pct": "0.3206"
+      },
+      {
+        "station_path": "L1_S25 > L2_S27 > L3_S29 > L3_S30 > L3_S33 > L3_S34 > L3_S35 > L3_S37",
+        "parts": 10609,
+        "failures": 34,
+        "failure_pct": "0.3205"
+      },
+      {
+        "station_path": "L0_S0 > L0_S1 > L0_S2 > L0_S5 > L0_S6 > L0_S8 > L0_S9 > L3_S29 > L3_S30 > L3_S33 > L3_S34 > L3_S36 > L3_S37",
+        "parts": 10536,
+        "failures": 48,
+        "failure_pct": "0.4556"
+      },
+      {
+        "station_path": "L0_S0 > L0_S1 > L0_S2 > L0_S5 > L0_S7 > L0_S8 > L0_S9 > L3_S29 > L3_S30 > L3_S33 > L3_S34 > L3_S36 > L3_S37",
+        "parts": 10530,
+        "failures": 40,
+        "failure_pct": "0.3799"
+      }
+    ]
+  },
+  "postgres_version": "PostgreSQL 17.11 on x86_64-windows, compiled by msvc-19.44.35229, 64-bit"
+}

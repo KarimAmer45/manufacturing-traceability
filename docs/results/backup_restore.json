@@ -1,0 +1,119 @@
+{
+  "run_at": "2026-10-11T18:18:57+02:00",
+  "source_database": "plating_traceability",
+  "target_server": "127.0.0.1:55439",
+  "restored_database": "trace_restore_6f39dea281",
+  "restore_options": [
+    "--no-owner",
+    "--exit-on-error"
+  ],
+  "restore_seconds": 1.434,
+  "total_seconds": 3.123,
+  "backup_bytes": 1710627,
+  "table_counts_match": true,
+  "table_hashes_match": true,
+  "complaint_low_results": 2,
+  "tables": {
+    "audit.change_log": {
+      "rows": 34089,
+      "sha256_sum": "72d6f579f4946cf74e33d4d6abf881ee1fd52ed0f687759892aac1e52f15776b"
+    },
+    "bosch.part": {
+      "rows": 0,
+      "sha256_sum": "0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    "bosch.station": {
+      "rows": 0,
+      "sha256_sum": "0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    "bosch.station_pass": {
+      "rows": 0,
+      "sha256_sum": "0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    "lab.analysis": {
+      "rows": 130,
+      "sha256_sum": "257aa25735feae4971163af74f6c8d58412abeb4d85101202c46ad479e20535b"
+    },
+    "lab.analysis_max_age": {
+      "rows": 0,
+      "sha256_sum": "0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    "lab.analysis_result": {
+      "rows": 650,
+      "sha256_sum": "bbe5c417887eb21788cf16704e7cbee9566e2f6c4565ddf218a1f07eecd409dd"
+    },
+    "lab.parameter": {
+      "rows": 5,
+      "sha256_sum": "7f2a163f253255db555b043b8c432704be5d9c39b471e6559b73fa2655c037ad"
+    },
+    "lab.parameter_limit": {
+      "rows": 4,
+      "sha256_sum": "8f0ca2772a5f16f1dd7f7c280b153322777888a4f6553e4537cd362c375bc94e"
+    },
+    "public.project_migration": {
+      "rows": 14,
+      "sha256_sum": "f44cfb018e9225dd1d6b3463313f397114212a29cc0dc5c27c698d1bdbb9e09b"
+    },
+    "ref.customer": {
+      "rows": 5,
+      "sha256_sum": "d00ed9ff1f1a465d41294884b89e2f09cfac23f67c1e497a2c40fd33bfb5a6a0"
+    },
+    "ref.line": {
+      "rows": 1,
+      "sha256_sum": "5602cccd99013f957125bfff9b33df51f271c3ec78cc612d285be4e8a12e25b8"
+    },
+    "ref.part": {
+      "rows": 16,
+      "sha256_sum": "daca9a3c3ab984e393873696a0656fd1391b327d2a980e3415ca5a474ece7f73"
+    },
+    "ref.process": {
+      "rows": 2,
+      "sha256_sum": "7b100aaf1a4b093d009ad8c8708c308a6ec43a973615aea803959d60c7a47ff8"
+    },
+    "ref.station": {
+      "rows": 37,
+      "sha256_sum": "d30f5d6de66ad0d8529fa2989d189159635774cad673c7398bc0078a2b3d678f"
+    },
+    "ref.tank": {
+      "rows": 9,
+      "sha256_sum": "2578bbc29290c24d183b1fba6b32eaaf60117d745c9f923e3b9be340b808ae9a"
+    },
+    "trace.complaint": {
+      "rows": 1,
+      "sha256_sum": "4c9211f6827cb14635e8ee2c587575107ef9c9f293238121e9e59fb2bfd8f653"
+    },
+    "trace.customer_order": {
+      "rows": 5200,
+      "sha256_sum": "d430a8518b0df47b3b000c4a07dd1adaa7444e58e2394118b04ba340d986eb07"
+    },
+    "trace.delivery": {
+      "rows": 650,
+      "sha256_sum": "4abc42e8e61a7e27ca1c95fae76925ad0f8445d0f27ef24e7f70f8ae235f40cf"
+    },
+    "trace.delivery_lot": {
+      "rows": 4668,
+      "sha256_sum": "5de1b2b8ce3cbd32a8e394f2c2839106567ab043388d9a57effdc8e6c78e233d"
+    },
+    "trace.load": {
+      "rows": 11662,
+      "sha256_sum": "3799f0f9a9758c9e7ccce4a844550f6e757679f2fd46dbdd21ab83dbf546407e"
+    },
+    "trace.load_lot": {
+      "rows": 15136,
+      "sha256_sum": "ac1564bd767f4d5d1c160d22734fb058f7d83d4d8f16e7e0319bc6b698d126aa"
+    },
+    "trace.load_step": {
+      "rows": 11662,
+      "sha256_sum": "6ea33d97b0e17fef225bedbcbb80509f4b7f78b09032fce66475783458ed0a4a"
+    },
+    "trace.lot": {
+      "rows": 5687,
+      "sha256_sum": "430e250569c864b5af1e8df056f56114c5e2ae6038719b104d49eb3f3ff633cb"
+    },
+    "trace.measurement": {
+      "rows": 27733,
+      "sha256_sum": "b40e679cbb6338ffb90606935341cf238efee8e3fb9158c59497a9cf5a22e163"
+    }
+  },
+  "note": "Run while no other writes are occurring. Every table is compared by row count and content hash; the complaint trace is re-run on the restored database."
+}

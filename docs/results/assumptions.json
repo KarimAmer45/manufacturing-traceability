@@ -1,0 +1,81 @@
+{
+  "simulation": {
+    "why": "Demonstration scheduling, incident severity and sampling choices; none are Partec production facts. Production spread interprets published ranges as +/- 2 sigma; the Ni incident is an illustrative rule, not a calibrated chemistry model.",
+    "value": {
+      "open_range_margin_um": 3,
+      "incident_position_divisor": 3,
+      "incident_days": 2,
+      "sample_hour": 6,
+      "production_start_hour": 7,
+      "incident_ni_shortfall_g_l": [
+        0.15,
+        0.3
+      ],
+      "incident_deposit_ni_pct": [
+        10.5,
+        11.5
+      ],
+      "customers_per_part": 2,
+      "partial_barrel_fraction": 0.8,
+      "measurement_floor_um": 0.5,
+      "thickness_test_delay_min": 30,
+      "ni_test_delay_min": 40,
+      "rework_probability": 0.9,
+      "carrier_pool": 60,
+      "shipping_delay_days": 1,
+      "shipping_hour": 14,
+      "rework_delay_days": 1,
+      "complaint_delay_weeks": 6
+    }
+  },
+  "barrel_load_kg": {
+    "value": 40,
+    "why": "no public barrel capacity found; sets pieces per barrel"
+  },
+  "thread_area_factor": {
+    "value": 1.3,
+    "why": "threads add surface; geometric cylinder underestimates it"
+  },
+  "aim_thickness": {
+    "value": "midpoint of a closed range, minimum + 3 um if open ended",
+    "why": "plating to the minimum risks rejects"
+  },
+  "within_carrier_cv": {
+    "value": 0.1,
+    "why": "spread of thickness between pieces of one barrel; not published"
+  },
+  "lots_per_day": {
+    "value": 40,
+    "why": "order volume is not published"
+  },
+  "carriers_per_lot": {
+    "value": [
+      1,
+      4
+    ],
+    "why": "lot size spread"
+  },
+  "analyses_per_day": {
+    "value": 1,
+    "why": "typical once per shift or day; not published"
+  },
+  "thickness_samples_per_lot": {
+    "value": 5,
+    "why": "sampling plan is customer specific"
+  },
+  "ni_check_every_nth_lot": {
+    "value": 3,
+    "why": "deposit Ni is often sampled, not checked on every lot; creates the gap the planted complaint uses"
+  },
+  "rectifier_noise": {
+    "value": 0.01,
+    "why": "relative noise on simulated rectifier readings"
+  },
+  "rectifier_fault_factor": {
+    "value": 0.7,
+    "why": "planted fault: one slot delivers 70 % current for one day"
+  },
+  "incidents": {
+    "why": "planted on purpose so the trace queries have something to find"
+  }
+}

@@ -1,0 +1,6 @@
+customer_code,affected_lots,direct_lots,descendant_lots,affected_pieces,shipped_lots,shipped_pieces,delivery_notes
+C001,25,17,8,53267,9,30797,"['LS-000216', 'LS-000221']"
+C002,18,14,4,44134,10,26120,"['LS-000217', 'LS-000222']"
+C003,20,14,6,70197,7,40702,"['LS-000218', 'LS-000223']"
+C004,23,18,5,40754,13,28176,"['LS-000219', 'LS-000224']"
+C005,27,17,10,90701,7,54447,"['LS-000220', 'LS-000225']"
