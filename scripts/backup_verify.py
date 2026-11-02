@@ -119,7 +119,7 @@ def main():
     restore_seconds = time.perf_counter() - restore_start
     with psycopg.connect(**dict(admin, dbname=target)) as conn:
         restored = table_snapshot(conn)
-        complaint_hits = conn.execute("SELECT count(*) FROM trace.backward_trace((SELECT lot_id FROM trace.complaint LIMIT 1)) WHERE status='LOW'").fetchone()[0]
+        complaint_hits = conn.execute("SELECT count(*) FROM trace.backward_trace((SELECT lot_id FROM trace.complaint ORDER BY complaint_id LIMIT 1)) WHERE status='LOW'").fetchone()[0]
     counts_match = {k: v['rows'] for k, v in original.items()} == {k: v['rows'] for k, v in restored.items()}
     hashes_match = original == restored
     report = {'run_at': datetime.now().astimezone().isoformat(timespec='seconds'),
