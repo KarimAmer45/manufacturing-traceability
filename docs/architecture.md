@@ -25,7 +25,7 @@ erDiagram
 
 `ref` holds anonymised customers, catalogue parts and the model line. `lab` holds versioned operating limits and bath analyses whose half-open validity ranges extend until the next sample. `trace` joins orders, lots, carrier runs, inspection and deliveries. `audit` records row changes. `bosch` holds a separate public-data track; its anonymised ticks are not mixed with simulation dates.
 
-Backward tracing includes ancestors of a rework lot. It reads `trace.v_dwell_evidence`, which gives every plating dwell one row per analysis in force and parameter, plus NO_ANALYSIS rows for uncovered parts of the dwell; MISSING, STALE and NO_LIMIT make incomplete evidence visible (README, "Missing bath evidence"). `trace.v_unknown_exposure` lists the lots plated under such evidence, separately from containment.
+Backward tracing includes ancestors of a rework lot. It reads `trace.v_dwell_evidence`, which gives every plating dwell one row per analysis in force and parameter, plus NO_ANALYSIS rows for uncovered parts of the dwell; MISSING, STALE and NO_LIMIT make incomplete evidence visible (REPORT.md, "Missing bath evidence"). `trace.v_unknown_exposure` lists the lots plated under such evidence, separately from containment.
 
 Forward tracing starts with every load overlapping a bad bath period, includes descendants, and joins actual delivery quantities. Shipped rows are attributed to the delivery note's customer; the ordering customer is kept as a column. The customer report deduplicates lots across bad periods, separates directly plated lots from descendants, and counts affected pieces once per genealogy (a lot's quantity counts unless its parent is already affected).
 
